@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace src {
     public class Deck : ICardPile {
-        private List<string> values = new List<string>(){"2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"};
+        private List<string> values = new List<string>(){"2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace"};
         private List<string> suits = new List<string>(){"Spades", "Clubs", "Hearts", "Diamonds"};
         public List<Card> cards = new List<Card>();
         public DiscardPile discardPile = new DiscardPile();

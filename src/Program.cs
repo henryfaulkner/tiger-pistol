@@ -6,12 +6,16 @@ namespace src
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            string input = "";
             var deck = new Deck();
             deck.Randomize();
-            for(int i = 0; i < 60; i++) {
-                var card = deck.PullCard();
-                Console.WriteLine($"{card.value} of {card.suit}");
+            while(input != "quit"){
+                Console.WriteLine("Type 'pull' to pull a card.");
+                input = Console.ReadLine();
+                if(input == "pull") {
+                    var card = deck.PullCard();
+                    Console.WriteLine($"You pulled a {card.value} of {card.suit}.");
+                }
             }
         }
     }
