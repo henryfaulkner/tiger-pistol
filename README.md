@@ -1,6 +1,6 @@
 # tiger-pistol
 
-## run tests
+## run shuffle test
 
 - You'll will need the dotnet cli and .NET Core 3.1 installed
 - run test with $dotnet build; dotnet test;
