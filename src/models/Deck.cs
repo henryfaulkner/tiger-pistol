@@ -12,7 +12,6 @@ namespace src {
 
         public Deck() {
             PopulateDeck();
-            this.Randomize();
         }
 
         public void PopulateDeck() {
